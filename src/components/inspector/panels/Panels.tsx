@@ -48,6 +48,7 @@ import NumberInputPanel from './components/NumberInputPanel'
 import AspectRatioPanel from './components/AspectRatioPanel'
 import BreadcrumbPanel from './components/BreadcrumbPanel'
 import BreadcrumbItemPanel from './components/BreadcrumbItemPanel'
+import SliderPanel from './components/SliderPanel'
 
 const Panels: React.FC<{ component: IComponent; isRoot: boolean }> = ({
   component,
@@ -112,6 +113,7 @@ const Panels: React.FC<{ component: IComponent; isRoot: boolean }> = ({
       {type === 'Breadcrumb' && <BreadcrumbPanel />}
       {type === 'BreadcrumbItem' && <BreadcrumbItemPanel />}
       {type === 'BreadcrumbLink' && <LinkPanel />}
+      {type === 'Slider' && <SliderPanel />}
     </>
   )
 }

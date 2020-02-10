@@ -87,6 +87,8 @@ import {
   Grid,
   NumberInput,
   AspectRatioBox,
+  Slider,
+  SliderProps,
 } from '@chakra-ui/core'
 import FormLabel, { FormLabelProps } from '@chakra-ui/core/dist/FormLabel'
 
@@ -161,6 +163,11 @@ type PreviewDefaultProps = {
   AccordionMeta?: any
   ListMeta?: any
   BreadcrumbMeta?: any
+  Slider?: SliderProps
+  SliderTrack?: any
+  SliderFilledTrack?: any
+  SliderThumb?: Omit<any, 'children'>
+  SliderMeta?: any
 }
 
 export const DEFAULT_PROPS: PreviewDefaultProps = {
@@ -282,6 +289,7 @@ export const DEFAULT_PROPS: PreviewDefaultProps = {
       </>
     ),
   },
+  Slider: { ...Slider.defaultProps },
   List: { ...List.defaultProps, styleType: 'none' },
   ListIcon: { ...ListIcon.defaultProps },
   ListItem: { ...ListItem.defaultProps, children: 'list' },

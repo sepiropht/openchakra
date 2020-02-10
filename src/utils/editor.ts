@@ -41,6 +41,10 @@ export const COMPONENTS: ComponentType[] = [
   'SimpleGrid',
   'Spinner',
   'Select',
+  'Slider',
+  'SliderTrack',
+  'SliderFilledTrack',
+  'SliderThumb',
   'Stack',
   'Switch',
   'Tag',
@@ -88,3 +92,12 @@ export const rootComponents = COMPONENTS
         'AccordionIcon',
       ].includes(name),
   )
+  // Allow meta components
+  .concat([
+    'AlertMeta',
+    'FormControlMeta',
+    'AccordionMeta',
+    'ListMeta',
+    'InputGroupMeta',
+    'SliderMeta',
+  ])
