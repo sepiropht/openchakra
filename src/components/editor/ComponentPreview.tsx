@@ -13,6 +13,7 @@ import AccordionPreview, {
 } from './previews/AccordionPreview'
 import * as Chakra from '@chakra-ui/core'
 import WithChildrenPreviewContainer from './WithChildrenPreviewContainer'
+import PopoverTriggerPreview from './previews/PopoverTriggerPreview'
 import { getComponentBy } from '../../core/selectors/components'
 import PreviewContainer from './PreviewContainer'
 import { InputRightElementPreview } from './previews/InputRightElement'
@@ -54,6 +55,9 @@ const ComponentPreview: React.FC<{
     case 'NumberInput':
     case 'BreadcrumbLink':
     case 'Select':
+    case 'PopoverHeader':
+    case 'PopoverArrow':
+    case 'PopoverCloseButton':
       return (
         <PreviewContainer
           component={component}
@@ -93,6 +97,10 @@ const ComponentPreview: React.FC<{
     case 'TabList':
     case 'TabPanels':
     case 'Grid':
+    case 'Popover':
+    case 'PopoverBody':
+    case 'PopoverContent':
+    case 'PopoverFooter':
       return (
         <WithChildrenPreviewContainer
           enableVisualHelper
@@ -138,6 +146,8 @@ const ComponentPreview: React.FC<{
       return <AccordionPanelPreview component={component} />
     case 'AspectRatioBox':
       return <AspectRatioBoxPreview component={component} />
+    case 'PopoverTrigger':
+      return <PopoverTriggerPreview component={component} />
     default:
       return null
   }

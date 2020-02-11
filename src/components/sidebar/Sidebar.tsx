@@ -96,6 +96,17 @@ const menuItems: MenuItems = {
     },
   },
   NumberInput: {},
+  Popover: {
+    children: {
+      PopoverTrigger: {},
+      PopoverContent: {},
+      PopoverHeader: {},
+      PopoverBody: {},
+      PopoverArrow: {},
+      PopoverCloseButton: {},
+      PopoverFooter: {},
+    },
+  },
   Progress: {},
   Radio: {},
   RadioGroup: {
