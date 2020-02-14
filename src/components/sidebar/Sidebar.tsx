@@ -108,6 +108,7 @@ const menuItems: MenuItems = {
   Switch: {},
   Tabs: {
     children: {
+      Tabs: {},
       Tab: {},
       TabList: {},
       TabPanel: {},
