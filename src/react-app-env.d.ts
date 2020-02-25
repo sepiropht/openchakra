@@ -66,14 +66,6 @@ type ComponentType =
   | 'Grid'
   | 'BreadcrumbItem'
   | 'BreadcrumbLink'
-
-type MetaComponentType =
-  | 'FormControlMeta'
-  | 'AccordionMeta'
-  | 'ListMeta'
-  | 'AlertMeta'
-  | 'InputGroupMeta'
-  | 'BreadcrumbMeta'
   | 'Popover'
   | 'PopoverTrigger'
   | 'PopoverContent'
@@ -82,6 +74,14 @@ type MetaComponentType =
   | 'PopoverArrow'
   | 'PopoverCloseButton'
   | 'PopoverFooter'
+
+type MetaComponentType =
+  | 'FormControlMeta'
+  | 'AccordionMeta'
+  | 'ListMeta'
+  | 'AlertMeta'
+  | 'InputGroupMeta'
+  | 'BreadcrumbMeta'
   | 'PopoverMeta'
 
 interface IComponent {
